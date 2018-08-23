@@ -1,6 +1,12 @@
 @import url("../fonts/Formular-Regular.otf");
 @import url("../fonts/Formular-Bold.otf");
 
+:root {
+  --reg-font: Formular, sans-serif;
+  --text-color: #69728b;
+  --text-light-color: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,5 +14,30 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Formular, sans-serif;
+  font-family: var(--reg-font);
+  background-color: #000000;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-item-link {
+  color: #656999;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 class NavLoginButton extends React.Component {
   render() {
-    return <button>Login</button>;
+    return <button className="nav-login-btn">Login</button>;
   }
 }
 
