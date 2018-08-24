@@ -29,7 +29,6 @@ class SideBarHeader extends React.Component {
         <SideBarHeaderItem
           clName={firstItem.clName}
           content={firstItem.content}
-          toggleSideBar={this.props.toggleSideBar}
         />
         <span>or </span>
         <SideBarHeaderItem

@@ -1,7 +1,7 @@
 import React from "react";
 import SideBarHeader from "./SideBarHeader/SideBarHeader.js";
-import SideBarLoginForm from "./SideBarLoginForm/SideBarLoginForm.js";
-import SideBarLoginButton from "./SideBarLoginButton/SideBarLoginButton.js";
+import SideBarForm from "./SideBarForm/SideBarForm.js";
+import SideBarExecButton from "./SideBarExecButton/SideBarExecButton.js";
 import "./SideBar.css";
 
 class SideBar extends React.Component {
@@ -24,8 +24,8 @@ class SideBar extends React.Component {
           activeLogin={this.state.activeLogin}
           toggleSideBar={this.toggleSideBar}
         />
-        <SideBarLoginForm activeLogin={this.state.activeLogin} />
-        <SideBarLoginButton activeLogin={this.state.activeLogin} />
+        <SideBarForm activeLogin={this.state.activeLogin} />
+        <SideBarExecButton activeLogin={this.state.activeLogin} />
       </section>
     );
   }

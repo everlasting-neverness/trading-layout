@@ -1,4 +1,4 @@
-.side-bar-login-form {
+.side-bar-form {
   font-size: 14px;
 }
 
@@ -10,7 +10,7 @@
 .form-input {
   width: 100%;
   padding-top: 25px;
-  background-color: #181925;
+  background: none;
   color: var(--text-light-color);
   border: none;
   border-bottom: solid 1px #2f3751;

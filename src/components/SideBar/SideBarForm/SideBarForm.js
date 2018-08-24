@@ -1,7 +1,8 @@
 import React from "react";
-import "./SideBarLoginForm.css";
+import SideBarInputField from "./SideBarInputField/SideBarInputField.js";
+import "./SideBarForm.css";
 
-class SideBarLoginForm extends React.Component {
+class SideBarForm extends React.Component {
   constructor(props) {
     super(props);
     this.handleBtnViewHover = this.handleBtnViewHover.bind(this);
@@ -19,14 +20,14 @@ class SideBarLoginForm extends React.Component {
   handleBtnViewClick(e) {
     e.preventDefault();
     this.setState({ active: !this.state.active });
-  }
+  }  
 
   render() {
     let output;
     if (this.props.activeLogin) {
       output = (
-        <form className="side-bar-login-form">
-          <input type="email" className="form-input" placeholder="Email" />
+        <form className="side-bar-form">
+          <SideBarInputField type={'email'} placeholder={'Email'} />
           <div className="form-password-block">
             <input
               type={`${this.state.active ? "text" : "password"}`}
@@ -63,20 +64,12 @@ class SideBarLoginForm extends React.Component {
       );
     } else {
       output = (
-        <form className="side-bar-login-form">
-          <input type="email" className="form-input" placeholder="Email" />
-          <input
-            type="password"
-            className="form-input"
-            placeholder="Password"
-          />
-          <input
-            type="password"
-            className="form-input"
-            placeholder="Password confirm"
-          />
-          <input type="text" className="form-input" placeholder="Name" />
-          <input type="text" className="form-input" placeholder="Surname" />
+        <form className="side-bar-form">
+          <SideBarInputField type={'email'} placeholder={'Email'} />
+          <SideBarInputField type={'password'} placeholder={'Password'} />
+          <SideBarInputField type={'password'} placeholder={'Password confirm'} />
+          <SideBarInputField type={'text'} placeholder={'Name'} />
+          <SideBarInputField type={'text'} placeholder={'Surname'} />
         </form>
       );
     }
@@ -84,4 +77,4 @@ class SideBarLoginForm extends React.Component {
   }
 }
 
-export default SideBarLoginForm;
+export default SideBarForm;

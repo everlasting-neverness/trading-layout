@@ -1,9 +1,9 @@
 import React from "react";
-import "./SideBarLoginButton.css";
+import "./SideBarExecButton.css";
 
-function SideBarLoginButton(props) {
+function SideBarExecButton(props) {
   let text = props.activeLogin ? "Log in" : "Register";
   return <button className="side-bar-btn">{text}</button>;
 }
 
-export default SideBarLoginButton;
+export default SideBarExecButton;
