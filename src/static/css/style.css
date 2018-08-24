@@ -1,6 +1,3 @@
-@import url("../fonts/Formular-Regular.otf");
-@import url("../fonts/Formular-Bold.otf");
-
 :root {
   --reg-font: Formular, sans-serif;
   --text-color: #69728b;
@@ -39,6 +36,10 @@ nav {
   background-color: var(--dark);
   display: grid;
   grid-template-columns: 0.3fr 2fr 7fr;
+}
+
+.nav-logo {
+  margin: 15px;
 }
 
 .navbar {
@@ -123,11 +124,19 @@ nav {
 .form-email,
 .form-password {
   width: 100%;
-  margin-top: 25px;
+  padding-top: 25px;
   background-color: #181925;
   color: var(--text-light-color);
   border: none;
   border-bottom: solid 1px #2f3751;
+}
+
+.form-email:focus,
+.form-password:focus {
+  outline: none;
+  background-color: #0c0c15;
+  border: solid 0.5px rgba(0, 0, 0, 0.16);
+  border-bottom: solid 1px var(--text-light-color);
 }
 
 ::-webkit-input-placeholder {
@@ -245,6 +254,22 @@ footer {
 }
 
 .footer-p {
+  display: inline-block;
   font-size: 12px;
-  padding-right: 20px;
+  padding: 8px 20px;
+  color: var(--text-color);
+}
+
+@font-face {
+  font-family: "Formular";
+  src: url("../fonts/Formular-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Formular";
+  src: url("../fonts/Formular-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
 }
