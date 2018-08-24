@@ -1,0 +1,9 @@
+.side-bar {
+  grid-area: sidebar;
+  width: 388px;
+  background-color: #181925;
+  height: 90vh;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 1fr 15fr 1fr;
+}

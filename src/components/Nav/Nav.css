@@ -1,0 +1,6 @@
+nav {
+  grid-area: nav;
+  background-color: var(--dark);
+  display: grid;
+  grid-template-columns: 20px 1.5fr 7fr;
+}

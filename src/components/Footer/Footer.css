@@ -1,0 +1,12 @@
+footer {
+  grid-area: footer;
+  background-color: var(--dark);
+  text-align: right;
+}
+
+.footer-p {
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px 20px;
+  color: var(--text-color);
+}

@@ -1,0 +1,17 @@
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  min-width: 350px;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-item-link {
+  color: #656999;
+}
