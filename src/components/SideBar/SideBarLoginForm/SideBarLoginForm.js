@@ -4,26 +4,21 @@ import "./SideBarLoginForm.css";
 class SideBarLoginForm extends React.Component {
   constructor(props) {
     super(props);
+    this.handleBtnViewHover = this.handleBtnViewHover.bind(this);
     this.handleBtnViewClick = this.handleBtnViewClick.bind(this);
     this.state = {
-      img: require("../../../static/img/password-button/active/group-13-copy.png")
+      active: false,
+      hover: false
     };
+  }
+
+  handleBtnViewHover(e) {
+    this.setState({ hover: !this.state.hover });
   }
 
   handleBtnViewClick(e) {
     e.preventDefault();
-    if (
-      this.state.img ===
-      require("../../../static/img/password-button/active/group-13-copy.png")
-    ) {
-      this.setState({
-        img: require("../../../static/img/password-button/disabled/group-13-copy-5.png")
-      });
-    } else {
-      this.setState({
-        img: require("../../../static/img/password-button/active/group-13-copy.png")
-      });
-    }
+    this.setState({ active: !this.state.active });
   }
 
   render() {
@@ -37,15 +32,27 @@ class SideBarLoginForm extends React.Component {
             placeholder="Password"
           />
           <button
-            className="btn-view-password"
+            className={`btn-view-password
+              ${
+                this.state.hover && !this.state.ative
+                  ? "view-password-hovered-disabled"
+                  : ""
+              }
+              ${
+                this.state.hover && this.state.active
+                  ? "view-password-hovered-active"
+                  : ""
+              }
+              ${
+                this.state.active
+                  ? "view-password-active"
+                  : "view-password-disabled"
+              }
+              `}
+            onMouseEnter={this.handleBtnViewHover}
+            onMouseLeave={this.handleBtnViewHover}
             onClick={this.handleBtnViewClick}
-          >
-            <img
-              src={this.state.img}
-              alt="view"
-              className="btn-view-password-img"
-            />
-          </button>
+          />
           <p className="sub-form-text">
             <a href="#">Forgot password</a>
           </p>

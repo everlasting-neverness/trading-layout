@@ -19,6 +19,7 @@
   font-weight: bold;
   color: var(--text-light-color);
   margin: 0;
+  padding-top: 5px;
 }
 
 .content-item-content {
