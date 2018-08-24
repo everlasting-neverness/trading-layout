@@ -26,11 +26,19 @@ class SideBarHeader extends React.Component {
     }
     return (
       <div className="side-bar-header">
-        <SideBarHeaderItem clName={firstItem.clName} content={firstItem.content} />
+        <SideBarHeaderItem
+          clName={firstItem.clName}
+          content={firstItem.content}
+          toggleSideBar={this.props.toggleSideBar}
+        />
         <span>or </span>
-        <SideBarHeaderItem clName={secondItem.clName} content={secondItem.content} />
+        <SideBarHeaderItem
+          clName={secondItem.clName}
+          content={secondItem.content}
+          toggleSideBar={this.props.toggleSideBar}
+        />
       </div>
-    )
+    );
   }
 }
 

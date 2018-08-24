@@ -1,10 +1,9 @@
 import React from "react";
 import "./SideBarLoginButton.css";
 
-class SideBarLoginButton extends React.Component {
-  render() {
-    return <button className="side-bar-btn">Log in</button>;
-  }
+function SideBarLoginButton(props) {
+  let text = props.activeLogin ? "Log in" : "Register";
+  return <button className="side-bar-btn">{text}</button>;
 }
 
 export default SideBarLoginButton;

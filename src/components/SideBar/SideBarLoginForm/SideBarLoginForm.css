@@ -16,6 +16,10 @@
   border-bottom: solid 1px #2f3751;
 }
 
+.form-input + .form-input {
+  margin-top: 35px;
+}
+
 .form-input:focus {
   outline: none;
   background-color: #0c0c15;
@@ -53,19 +57,19 @@
 }
 
 .view-password-disabled {
-  background: url('../../../static/img/password-button/disabled/group-13-copy-4.png');
+  background: url("../../../static/img/password-button/disabled/group-13-copy-4.png");
 }
 
 .view-password-active {
-  background: url('../../../static/img/password-button/active/group-13-copy-3.png');
+  background: url("../../../static/img/password-button/active/group-13-copy-3.png");
 }
 
 .view-password-hovered-active {
-  background: url('../../../static/img/password-button/active-hovered/group-13-copy.png');
+  background: url("../../../static/img/password-button/active-hovered/group-13-copy.png");
 }
 
 .view-password-hovered-disabled {
-  background: url('../../../static/img/password-button/disabled-hovered/group-13-copy-5.png');
+  background: url("../../../static/img/password-button/disabled-hovered/group-13-copy-5.png");
 }
 
 .sub-form-text {
