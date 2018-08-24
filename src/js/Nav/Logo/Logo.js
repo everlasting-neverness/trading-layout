@@ -2,9 +2,10 @@ import React from "react";
 
 class Logo extends React.Component {
   render() {
+    const img = require('../../../static/img/nav-logo/w-copy-3.png');
     return (
       <div className="nav-logo">
-        <img src="./static/img/nav-logo/w-copy-3.png" alt="logo" className="nav-logo-img" />
+        <img src={img} alt="logo" className="nav-logo-img" />
       </div>
     );
   }

@@ -1,6 +1,30 @@
 import React from "react";
 
 class SideBarLoginForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleBtnViewClick = this.handleBtnViewClick.bind(this);
+    this.state = {
+      img: require("../../../static/img/password-button/active/group-13-copy.png")
+    };
+  }
+
+  handleBtnViewClick(e) {
+    e.preventDefault();
+    if (
+      this.state.img ===
+      require("../../../static/img/password-button/active/group-13-copy.png")
+    ) {
+      this.setState({
+        img: require("../../../static/img/password-button/disabled/group-13-copy-5.png")
+      });
+    } else {
+      this.setState({
+        img: require("../../../static/img/password-button/active/group-13-copy.png")
+      });
+    }
+  }
+
   render() {
     return (
       <form className="side-bar-login-form">
@@ -11,8 +35,15 @@ class SideBarLoginForm extends React.Component {
             className="form-password"
             placeholder="Password"
           />
-          <button className="btn-view-password">
-            <img src="" alt="view" />
+          <button
+            className="btn-view-password"
+            onClick={this.handleBtnViewClick}
+          >
+            <img
+              src={this.state.img}
+              alt="view"
+              className="btn-view-password-img"
+            />
           </button>
           <p className="sub-form-text">Forgot password</p>
         </div>
