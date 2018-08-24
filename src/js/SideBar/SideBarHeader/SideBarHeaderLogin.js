@@ -4,7 +4,7 @@ class SideBarHeaderLogin extends React.Component {
   render() {
     return (
       <div className="side-bar-header-left">
-        <button>Login</button>
+        <a href="#">Login</a>
       </div>
     );
   }

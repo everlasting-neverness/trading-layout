@@ -7,18 +7,22 @@ class ContentItems extends React.Component {
     this.state = {
       items: [
         {
+          img: "",
           title: "Derivatives",
           content: "Futures provide natural summetry between longs and shorts. This allows traders to gain profits both on bullish and bearish runs without any additional fees."
         },
         {
+          img: "",
           title: "Leverage up to 100×",
           content: "Futures trading volume on classic exchangesis 18 times larger thant he spot volumes. Crypto is still immature."
         },
         {
+          img: "",
           title: "Low latencies",
           content: "Futures trading volume on classic exchangesis 18 times larger thant he spot volumes. Crypto is still immature"
         },
         {
+          img: "",
           title: "Low fees and rebates",
           content: "20% of each quarter profit DERx will be spent on buying DCoin back at the market price."
         }
