@@ -7,8 +7,7 @@
   margin-top: 35px;
 }
 
-.form-email,
-.form-password {
+.form-input {
   width: 100%;
   padding-top: 25px;
   background-color: #181925;
@@ -17,8 +16,7 @@
   border-bottom: solid 1px #2f3751;
 }
 
-.form-email:focus,
-.form-password:focus {
+.form-input:focus {
   outline: none;
   background-color: #0c0c15;
   border: solid 0.5px rgba(0, 0, 0, 0.16);

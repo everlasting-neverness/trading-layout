@@ -9,13 +9,12 @@
   line-height: 1;
   font-size: 20px;
   font-weight: bold;
+  width: 78%;
 }
 
 .side-bar-header-right {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.57;
-}
-
-.side-bar-header-right-link {
   color: var(--text-light-color);
 }

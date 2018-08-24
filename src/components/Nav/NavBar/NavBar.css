@@ -5,7 +5,8 @@
   font-size: 14px;
   line-height: 1.14;
   align-items: center;
-  min-width: 350px;
+  min-width: 340px;
+  padding: 0;
 }
 
 .navbar-item {

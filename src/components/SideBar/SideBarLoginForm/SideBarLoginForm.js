@@ -24,17 +24,17 @@ class SideBarLoginForm extends React.Component {
   render() {
     return (
       <form className="side-bar-login-form">
-        <input type="email" className="form-email" placeholder="Email" />
+        <input type="email" className="form-input" placeholder="Email" />
         <div className="form-password-block">
           <input
-            type="password"
-            className="form-password"
+            type={`${this.state.active ? "text" : "password"}`}
+            className="form-input"
             placeholder="Password"
           />
           <button
             className={`btn-view-password
               ${
-                this.state.hover && !this.state.ative
+                this.state.hover && !this.state.active
                   ? "view-password-hovered-disabled"
                   : ""
               }

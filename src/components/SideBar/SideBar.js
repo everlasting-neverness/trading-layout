@@ -5,10 +5,17 @@ import SideBarLoginButton from "./SideBarLoginButton/SideBarLoginButton.js";
 import "./SideBar.css";
 
 class SideBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeLogin: true,
+    }
+  }
+
   render() {
     return (
       <section className="side-bar">
-        <SideBarHeader />
+        <SideBarHeader activeLogin={this.state.activeLogin} />
         <SideBarLoginForm />
         <SideBarLoginButton />
       </section>
