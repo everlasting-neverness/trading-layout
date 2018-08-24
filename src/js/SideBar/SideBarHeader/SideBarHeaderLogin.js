@@ -1,13 +1,11 @@
 import React from "react";
 
-class SideBarHeaderLogin extends React.Component {
-  render() {
-    return (
-      <div className="side-bar-header-left">
-        <a href="#">Login</a>
-      </div>
-    );
-  }
+function SideBarHeaderLogin() {
+  return (
+    <a href="#" className="side-bar-header-left">
+      Log in
+    </a>
+  );
 }
 
 export default SideBarHeaderLogin;
