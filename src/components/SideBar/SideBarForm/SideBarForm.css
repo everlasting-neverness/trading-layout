@@ -1,5 +1,5 @@
 .side-bar-form {
-  font-size: 14px;
+  font-size: 0.87rem;
 }
 
 .form-password-block {
@@ -10,7 +10,7 @@
 .btn-view-password {
   position: absolute;
   left: 92%;
-  top: 15px;
+  top: 21px;
   width: 25px;
   height: 15px;
   z-index: 3;
@@ -37,7 +37,7 @@
 .sub-form-text {
   margin: 0;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: right;
 }
 

@@ -9,9 +9,10 @@
     background: none;
     width: 100%;
     padding-top: 25px;
+    line-height: 2;
     position: relative;
     z-index: 2;
-    font-size: 14px;
+    font-size: 0.87rem;
     color: var(--text-light-color);
 }
 .input-field__input:focus {
@@ -31,21 +32,15 @@
     transition: all 0.2s ease;
 }
 
+.input-field__placeholder-up,
 .input-field__input_filled + .input-field__placeholder,
 .input-field__input:focus + .input-field__placeholder {
     font-size: 0.9em;
     top: 0;
-    margin-top: 0.3em;
+    margin-top: 0.8em;
     z-index: 3;
 }
 
 .input-field + .input-field {
   margin-top: 35px;
-}
-
-.input-field__placeholder-up {
-  font-size: 0.9em;
-  top: 0;
-  margin-top: 0.3em;
-  z-index: 3;
 }

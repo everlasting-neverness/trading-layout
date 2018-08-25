@@ -14,7 +14,7 @@
 
 .content-item-title {
   grid-area: item-title;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 1.5;
   font-weight: bold;
   color: var(--text-light-color);
@@ -24,7 +24,7 @@
 
 .content-item-content {
   grid-area: item-content;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0;
 }

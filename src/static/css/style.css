@@ -30,6 +30,11 @@ button:focus {
   outline: none;
 }
 
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
 @font-face {
   font-family: "Formular";
   src: url("../fonts/Formular-Regular.otf") format("truetype");

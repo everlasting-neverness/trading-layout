@@ -7,7 +7,7 @@
   display: inline-block;
   color: var(--text-light-color);
   line-height: 1;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: bold;
   width: 78%;
   min-width: 227px;
@@ -15,7 +15,7 @@
 
 .side-bar-header-right {
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.87rem;
   line-height: 1.57;
   color: var(--text-light-color);
   margin-left: 10px;
