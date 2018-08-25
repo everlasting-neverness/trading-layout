@@ -6,3 +6,18 @@
   display: grid;
   grid-template-rows: 1fr 15fr 1fr;
 }
+
+@media screen and (max-width: 1235px) {
+  .side-bar {
+    grid-template-rows: 1fr 3fr 3fr;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .side-bar {
+    display: block;
+    width: 100%;
+    min-width: 300px;
+    padding: 3rem;
+  }
+}

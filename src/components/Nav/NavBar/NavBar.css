@@ -16,3 +16,9 @@
 .navbar-item-link {
   color: #656999;
 }
+
+@media screen and (max-width: 505px) {
+  .navbar {
+    min-width: 250px;
+  }
+}

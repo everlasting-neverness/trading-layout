@@ -4,3 +4,9 @@ nav {
   display: grid;
   grid-template-columns: 0.3fr 1.5fr 7fr;
 }
+
+@media screen and (max-width: 980px) {
+  nav {
+    grid-template-columns: 0.3fr 2fr 1fr;
+  }
+}

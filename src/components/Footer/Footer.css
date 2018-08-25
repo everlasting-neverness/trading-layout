@@ -10,3 +10,9 @@ footer {
   padding: 5px 20px;
   color: var(--text-color);
 }
+
+@media screen and (max-width: 980px) {
+  footer {
+    text-align: center;
+  }
+}

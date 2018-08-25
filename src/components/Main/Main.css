@@ -2,8 +2,19 @@
   width: 100%;
   height: 100vh;
   display: grid;
+  grid-template-rows: 1fr 15fr 0.3fr;
   grid-template-areas:
     "nav nav"
     "sidebar content"
     "footer footer";
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    grid-template-areas:
+      "nav"
+      "content"
+      "sidebar"
+      "footer";
+  }
 }
