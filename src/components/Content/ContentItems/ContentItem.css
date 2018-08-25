@@ -2,6 +2,7 @@
   max-width: 400px;
   margin: 1.5rem;
   display: grid;
+  grid-template-columns: 0.4fr 2fr;
   grid-template-areas:
     "logo item-title"
     "logo item-content";
@@ -29,7 +30,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1490px) {
+@media screen and (max-width: 1470px) {
   .content-item {
     max-width: 320px;
     margin: 1.5rem 0;
@@ -45,5 +46,12 @@
 @media screen and (max-width: 1230px) {
   .content-item {
     max-width: 100%;
+    grid-template-columns: 1fr 7fr;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .content-item {
+    grid-template-columns: 2fr 9fr;
   }
 }
