@@ -7,45 +7,13 @@
   margin-top: 35px;
 }
 
-.form-input {
-  width: 100%;
-  padding-top: 25px;
-  background: none;
-  color: var(--text-light-color);
-  border: none;
-  border-bottom: solid 1px #2f3751;
-}
-
-.form-input + .form-input {
-  margin-top: 35px;
-}
-
-.form-input:focus {
-  outline: none;
-  background-color: #0c0c15;
-  border: solid 0.5px rgba(0, 0, 0, 0.16);
-  border-bottom: solid 1px var(--text-light-color);
-}
-
-::-webkit-input-placeholder {
-  color: var(--text-color);
-}
-:-ms-input-placeholder {
-  color: var(--text-color);
-}
-::-moz-placeholder {
-  color: var(--text-color);
-}
-:-moz-placeholder {
-  color: var(--text-color);
-}
-
 .btn-view-password {
   position: absolute;
   left: 330px;
   top: 15px;
   width: 25px;
   height: 15px;
+  z-index: 3;
   border: none;
   background-color: #181925;
 }

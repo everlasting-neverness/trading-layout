@@ -20,19 +20,18 @@ class SideBarForm extends React.Component {
   handleBtnViewClick(e) {
     e.preventDefault();
     this.setState({ active: !this.state.active });
-  }  
+  }
 
   render() {
     let output;
     if (this.props.activeLogin) {
       output = (
         <form className="side-bar-form">
-          <SideBarInputField type={'email'} placeholder={'Email'} />
+          <SideBarInputField type={"email"} placeholder={"Email"} />
           <div className="form-password-block">
-            <input
+            <SideBarInputField
               type={`${this.state.active ? "text" : "password"}`}
-              className="form-input"
-              placeholder="Password"
+              placeholder={"Password"}
             />
             <button
               className={`btn-view-password
@@ -65,11 +64,14 @@ class SideBarForm extends React.Component {
     } else {
       output = (
         <form className="side-bar-form">
-          <SideBarInputField type={'email'} placeholder={'Email'} />
-          <SideBarInputField type={'password'} placeholder={'Password'} />
-          <SideBarInputField type={'password'} placeholder={'Password confirm'} />
-          <SideBarInputField type={'text'} placeholder={'Name'} />
-          <SideBarInputField type={'text'} placeholder={'Surname'} />
+          <SideBarInputField type={"email"} placeholder={"Email"} />
+          <SideBarInputField type={"password"} placeholder={"Password"} />
+          <SideBarInputField
+            type={"password"}
+            placeholder={"Password confirm"}
+          />
+          <SideBarInputField type={"text"} placeholder={"Name"} />
+          <SideBarInputField type={"text"} placeholder={"Surname"} />
         </form>
       );
     }
