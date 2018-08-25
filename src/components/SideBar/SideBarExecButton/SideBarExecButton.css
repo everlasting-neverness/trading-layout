@@ -11,3 +11,9 @@
   background-image: linear-gradient(to bottom, #1b91ff, #2068ff);
   border: solid 0.5px #568cff;
 }
+
+@media screen and (max-width: 980px) {
+  .side-bar-btn {
+    margin-top: 25px;
+  }
+}

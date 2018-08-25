@@ -15,4 +15,9 @@ footer {
   footer {
     text-align: center;
   }
+
+  .footer-p {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
 }

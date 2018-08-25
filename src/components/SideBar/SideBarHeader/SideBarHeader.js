@@ -30,7 +30,7 @@ class SideBarHeader extends React.Component {
           clName={firstItem.clName}
           content={firstItem.content}
         />
-        <span>or </span>
+        <span>or</span>
         <SideBarHeaderItem
           clName={secondItem.clName}
           content={secondItem.content}
