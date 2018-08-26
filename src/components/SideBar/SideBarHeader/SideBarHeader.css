@@ -3,14 +3,9 @@
   justify-content: space-between;
 }
 
-.side-bar-header-left {
-  display: inline-block;
+.side-bar-header-heading {
   color: var(--text-light-color);
-  line-height: 1;
-  font-size: 1.3rem;
-  font-weight: bold;
-  width: 78%;
-  min-width: 227px;
+  margin: 0;
 }
 
 .side-bar-header-right {
@@ -19,11 +14,4 @@
   line-height: 1.57;
   color: var(--text-light-color);
   margin-left: 10px;
-  min-width: 42px;
-}
-
-@media screen and (max-width: 980px) {
-  .side-bar-header-left {
-    width: 85%;
-  }
 }

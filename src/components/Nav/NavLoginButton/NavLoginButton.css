@@ -1,22 +1,10 @@
-.nav-btn-block {
-  text-align: right;
-  padding: 15px;
-}
-
 .nav-login-btn {
-  width: 68px;
-  height: 26px;
   font-size: 0.87rem;
+  padding: 6px 13px;
   line-height: 1.14;
   background-color: var(--dark);
   opacity: 0.7;
   color: var(--text-light-color);
   border-radius: 4px;
   border: solid 0.5px var(--text-color);
-}
-
-@media screen and (max-width: 980px) {
-  .nav-btn-block {
-    text-align: center;
-  }
 }

@@ -1,9 +1,3 @@
-.nav-logo {
-  margin: 10px;
-}
-
 .nav-logo-img {
-  object-fit: contain;
-  min-width: 34.5px;
-  min-height: 29.3px;
+  display: block;
 }

@@ -1,8 +1,5 @@
-.side-bar-btn {
-  width: 100%;
-  height: 38px;
-  padding: 0px;
-  font-size: 1rem;
+.btn-primary {
+  padding: 10px 20px;
   font-weight: bold;
   color: var(--text-light-color);
   line-height: 1.38;
@@ -10,10 +7,4 @@
   box-shadow: 0 2px 0 0 #0053ff;
   background-image: linear-gradient(to bottom, #1b91ff, #2068ff);
   border: solid 0.5px #568cff;
-}
-
-@media screen and (max-width: 980px) {
-  .side-bar-btn {
-    margin-top: 25px;
-  }
 }

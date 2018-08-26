@@ -1,41 +1,36 @@
-import React from "react";
-import SideBarHeaderItem from "./SideBarHeaderItem.js";
-import "./SideBarHeader.css";
+import React from 'react';
+import SideBarHeaderItem from './SideBarHeaderItem.js';
+import './SideBarHeader.css';
 
 class SideBarHeader extends React.Component {
   render() {
     let firstItem, secondItem;
     if (this.props.activeLogin) {
       firstItem = {
-        clName: "side-bar-header-left",
-        content: "Log in"
+        content: 'Log\u00A0in',
       };
       secondItem = {
-        clName: "side-bar-header-right",
-        content: "Register"
+        content: 'Register',
       };
     } else {
       firstItem = {
-        clName: "side-bar-header-left",
-        content: "Register"
+        content: 'Register',
       };
       secondItem = {
-        clName: "side-bar-header-right",
-        content: "Log in"
+        content: 'Log\u00A0in',
       };
     }
     return (
       <div className="side-bar-header">
-        <SideBarHeaderItem
-          clName={firstItem.clName}
-          content={firstItem.content}
-        />
-        <span>or</span>
-        <SideBarHeaderItem
-          clName={secondItem.clName}
-          content={secondItem.content}
-          toggleSideBar={this.props.toggleSideBar}
-        />
+        <h3 className="side-bar-header-heading">{firstItem.content}</h3>
+        <div>
+          <span>or</span>
+          <SideBarHeaderItem
+            className="side-bar-header-right"
+            content={secondItem.content}
+            toggleSideBar={this.props.toggleSideBar}
+          />
+        </div>
       </div>
     );
   }

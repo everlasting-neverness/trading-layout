@@ -1,12 +1,22 @@
-nav {
-  grid-area: nav;
+.nav {
   background-color: var(--dark);
-  display: grid;
-  grid-template-columns: 0.3fr 1.5fr 7fr;
+  display: flex;
+  padding: 10px 1rem;
+  overflow-x: auto;
 }
 
-@media screen and (max-width: 980px) {
-  nav {
-    grid-template-columns: 0.3fr 2fr 1fr;
+.nav > * + * {
+  margin-left: 20px;
+}
+
+.nav-element-last {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 510px) {
+  .nav-element-last {
+    margin-left: 20px;
   }
 }

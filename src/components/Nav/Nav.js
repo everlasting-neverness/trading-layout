@@ -7,10 +7,12 @@ import "./Nav.css";
 class Nav extends React.Component {
   render() {
     return (
-      <nav>
+      <nav className="nav">
         <Logo />
         <NavBar />
-        <NavLoginButton />
+        <div className="nav-element-last">
+          <NavLoginButton />
+        </div>
       </nav>
     )
   }

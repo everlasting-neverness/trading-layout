@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 function SideBarHeaderItem(props) {
   return (
-    <a href="#" className={`${props.clName}`} onClick={props.toggleSideBar}>{`${
+    <a href="#" className={props.className} onClick={props.toggleSideBar}>{`${
       props.content
     }`}</a>
   );
