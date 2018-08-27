@@ -13,13 +13,13 @@
     position: relative;
     z-index: 2;
     font-size: 0.87rem;
-    color: var(--text-light-color);
+    color: #ffffff;
 }
 .input-field__input:focus {
   outline: none;
   background-color: #0c0c15;
   border: solid 0.5px rgba(0, 0, 0, 0.16);
-  border-bottom: solid 1px var(--text-light-color);
+  border-bottom: solid 1px #ffffff;
 }
 
 .input-field__placeholder {
@@ -28,7 +28,7 @@
     z-index: 1;
     left:0;
     top: 50%;
-    color: var(--text-color);
+    color: #69728b;
     transition: all 0.2s ease;
 }
 

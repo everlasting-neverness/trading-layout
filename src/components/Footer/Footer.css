@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--dark);
+  background-color: #13141c;
   text-align: right;
 }
 
@@ -7,7 +7,7 @@ footer {
   display: inline-block;
   font-size: 0.75rem;
   padding: 5px 20px;
-  color: var(--text-color);
+  color: #69728b;
 }
 
 @media screen and (max-width: 980px) {

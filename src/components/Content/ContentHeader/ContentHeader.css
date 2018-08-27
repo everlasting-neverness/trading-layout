@@ -6,14 +6,14 @@
   font-size: 34px;
   line-height: 1.12;
   font-weight: bold;
-  color: var(--text-light-color);
+  color: #ffffff;
   margin-top: 0;
 }
 
 .content-header-content {
   font-size: 1.3rem;
   line-height: 1.4;
-  color: var(--text-color);
+  color: #69728b;
 }
 
 @media screen and (max-width: 1230px) {

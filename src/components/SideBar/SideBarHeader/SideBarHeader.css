@@ -4,7 +4,7 @@
 }
 
 .side-bar-header-heading {
-  color: var(--text-light-color);
+  color: #ffffff;
   margin: 0;
 }
 
@@ -12,6 +12,6 @@
   display: inline-block;
   font-size: 0.87rem;
   line-height: 1.57;
-  color: var(--text-light-color);
+  color: #ffffff;
   margin-left: 10px;
 }
